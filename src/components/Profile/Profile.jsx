@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { Box } from 'components/Box';
 import {
+  Container,
   Avatar,
   Location,
   Name,
@@ -13,15 +14,7 @@ import {
 
 function Profile({ username, tag, location, avatar, stats }) {
   return (
-    <Box
-      as="section"
-      textAlign="center"
-      backgroundColor="#fff"
-      borderRadius="10px"
-      border="1px solid #dce3ec"
-      width="250px"
-      overflow="hidden"
-    >
+    <Container>
       <Box p="30px 0">
         <Avatar src={avatar} alt="User avatar" />
         <Name>{username}</Name>
@@ -43,7 +36,7 @@ function Profile({ username, tag, location, avatar, stats }) {
           <Quantity>{stats.likes}</Quantity>
         </ListItem>
       </StatsList>
-    </Box>
+    </Container>
   );
 }
 

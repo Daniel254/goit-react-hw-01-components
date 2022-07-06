@@ -1,12 +1,12 @@
-import Profile from 'components/Profile/Profile';
-import Statistics from 'components/Statistics/Statistics';
-import FriendList from 'components/FriendList/FriendList';
-import TransactionHistory from 'components/TransactionHistory/TransactionHistory';
+import Profile from 'components/Profile';
+import Statistics from 'components/Statistics';
+import FriendList from 'components/FriendList';
+import TransactionHistory from 'components/TransactionHistory';
+import { Box } from 'components/Box';
 import userData from 'storage/user.json';
 import statsData from 'storage/data.json';
 import friendsData from 'storage/friends.json';
 import transactionsData from 'storage/transactions.json';
-import { Box } from './Box';
 
 export const App = () => {
   return (

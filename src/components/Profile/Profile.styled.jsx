@@ -1,5 +1,13 @@
 import styled from 'styled-components';
 
+export const Container = styled.section`
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #dce3ec;
+  width: 250px;
+  overflow: hidden;
+`;
 export const Avatar = styled.img`
   height: 100px;
   width: 100px;
